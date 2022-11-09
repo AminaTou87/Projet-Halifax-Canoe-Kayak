@@ -1,0 +1,84 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Book A Trip">
+    <meta name="description" content="c'est un formulaire">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Book A Trip</title>
+</head>
+<body>
+    <header>
+        
+        <!--Barre de navigation -->
+        <nav class="navbar">
+              <div class="navbar-container containerBookatrip">
+                <input type="checkbox" name="" id="">
+               <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div> 
+                
+                <ul class="menu-items">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="bookatrip.html">Book A Trip</a></li>
+                    <li><a href="admin.html">Admin Login</a></li>
+                </ul>
+               
+                <div class="logo">
+                    <img src="../images/paddle-white.png" height="55" alt="paddle white">
+                </div>
+                      <!-- Centered title -->
+               <div class="Centeredtitle">
+                <h3>Halifax Canoe and Kayak</h3>
+              </div>
+            </div>
+   
+        </nav>
+    </header>
+    <main>
+        <div class="main" style="width: 1000px;margin-left:auto; margin-right:auto;">
+            
+         <!-- Titre dans l'image -->
+         <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+              <h3 class="main-title" id="home">Come Expirence <br> Canada</h3>
+            </div>
+        </section>
+        <!-- Formulaire -->
+       <section class="contraineform">
+           <h1> BOOK A Trip </h1>
+           <hr>
+         <form name="form1" action="thankyou.php" method="get">
+            <label for="titre"> Just Some Quick Details </label>
+            <br><br>
+            <label for="email"> Email : </label>
+            <input type="email" name="email" id="email" placeholder=" Your Email " onblur="ValidateEmail(this);">  
+            <br><br>
+            <label for="location"> Location : </label>
+            <select name="location" id="location">
+                    <option value=""> Select </option>
+                    <option value="Moncton">Moncton</option>
+                    <option value="Halifax">Halifax</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Montreal">Montreal</option>
+            </select>
+           
+            <br><br>
+            <label for="datetrip"> Trip Date : </label>
+            <input type="date" name="datetrip" id="datetrip" placeholder=" mm/dd/yyyy ">
+            <br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
+
+
+
